@@ -9,7 +9,7 @@ print('"When Faced With Death, Who Should Live Versus Who Will Live Are Two Enti
 print("The rules are simple: The computer chooses of a word and you will to try to guess what it is one letter at a time.\n")
 
 
-def hangman():
+def main():
     word = random.choice(WORDS)
     set_of_letters = set(word)  # set to store the letters from the random word
     set_alphabet = set(string.ascii_uppercase) # The uppercase letters 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
@@ -20,8 +20,8 @@ def hangman():
         print('You have', lives, 'lives. Enter a letter and find the missing word:\n')
         print('The letters used so far:',' '.join(used_letters)) #join the letters used into a set
 
-        word_list = [letter if letter in used_letters else '-' for letter in word]  # what current word is (ie W - R D)
-        print(hangman_lives[lives]) # import the hangman drawing
+        word_list = [letter if letter in used_letters else '-' for letter in word]  # set the output in the terminal. Show the letter if it's in the set otherwise show "-"
+        print(hangman_lives[lives]) # import the hangman drawing and print them to the console
         print('Current word: ', ' '.join(word_list)) #print the word
 
         guess = input('Guess a letter: ').upper()
@@ -45,4 +45,5 @@ def hangman():
     else:
         print('Your are amazing, it was:', word, '!!')
 
-hangman()
+if __name__ == "__main__":
+    main()
