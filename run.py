@@ -1,27 +1,33 @@
+#HANGMAN GAME
 import random
 import string
-from drawings import hangman_lives
+from constants import hangman_state_by_lives_left, WORDS, DRAWING
 
-WORDS = ('OVERUSED', 'EXPRESS', 'PLEASANT', 'SWALLOW', 'PROPERTY', 'ACQUITANCE', 'GRADUAL', 'CAPITAL', 'DETECTIVE', 'MEASURE', 'DISGRACE', 'CIGARETTE', 'CROSSING', 'MULTIMEDIA', 'VOLUNTEER', 'TRANSFORM')
-print("\n!!! Welcome to the Hangman Game !!!\n")
-print('"When Faced With Death, Who Should Live Versus Who Will Live Are Two Entirely Separate Things." - Jigsaw\n')
-print("The rules are simple: The computer chooses of a word and you will to try to guess what it is one letter at a time.\n")
+print(DRAWING)
 
+def get_incomplete_word(used_letters, word):
+    incomplete_word_list = [letter if letter in used_letters else '-' for letter in word]  # set the output in the terminal. Show the letter if it's in the set otherwise show "-"
+    return ' '.join(incomplete_word_list)
 
-def main():
-    word = random.choice(WORDS)
-    set_of_letters = set(word)  # set to store the letters from the random word
+# def ask_if_play_again():
+#   # Take input, check if yes.
+#   # If yes, then call start_game()
+
+def start_game():
+    selected_word = random.choice(WORDS)
+    set_of_letters = set(selected_word)  # set to store the letters from the random word
     set_alphabet = set(string.ascii_uppercase) # The uppercase letters 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
     used_letters = set()  # set to store the letters that the user has guessed and it won't allow him to reenter, print them to the console
-    lives = len(hangman_lives) # The lives that the user will have
+    lives_left = len(hangman_state_by_lives_left) # The lives that the user will have
 
-    while len(set_of_letters) > 0 and lives > 0:
-        print('You have', lives, 'lives. Enter a letter and find the missing word:\n')
+    while len(set_of_letters) > 0 and lives_left > 0:
+        print('You have', lives_left, 'lives. Enter a letter and find the missing word:\n')
         print('The letters used so far:',' '.join(used_letters)) #join the letters used into a set
 
-        word_list = [letter if letter in used_letters else '-' for letter in word]  # set the output in the terminal. Show the letter if it's in the set otherwise show "-"
-        print(hangman_lives[lives]) # import the hangman drawing and print them to the console
-        print('Current word: ', ' '.join(word_list)) #print the word
+        incomplete_word = get_incomplete_word(used_letters, selected_word)
+
+        print(hangman_state_by_lives_left[lives_left]) # import the hangman drawing and print them to the console
+        print('Current word:', incomplete_word) #print the word
 
         guess = input('Guess a letter: ').upper()
         if guess in set_alphabet - used_letters:
@@ -30,7 +36,7 @@ def main():
                 set_of_letters.remove(guess)
                 print('')
             else:
-                lives = lives - 1
+                lives_left = lives_left - 1
                 print('\n Wrong!', guess, 'is not in the word.')
 
         elif guess in used_letters:
@@ -39,10 +45,23 @@ def main():
         else:
             print('\nDo you know what a letter is, right?')
 
-    if lives == 0:
-        print('\n You were hanged. The word was', word)
+    if lives_left == 0:
+        print('\n You were hanged. The word was', selected_word)
     else:
-        print('Your are amazing, it was:', word, '!!')
+        print('Your are amazing, it was:', selected_word, '!!')
+
+# ask_if_play_again()
+
+
+def initialise_game():
+  print("\n!!! Welcome to the Hangman Game !!!\n")
+  print('"When Faced With Death, Who Should Live Versus Who Will Live Are Two Entirely Separate Things." - Jigsaw\n')
+  print("The rules are simple: The computer chooses of a word and you will to try to guess what it is one letter at a time.\n")
+  start_game()
+
+
+def main():
+    initialise_game()
 
 if __name__ == "__main__":
-    main()
+    main() 
