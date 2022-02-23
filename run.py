@@ -9,10 +9,6 @@ def get_incomplete_word(used_letters, word):
     incomplete_word_list = [letter if letter in used_letters else '-' for letter in word]  # set the output in the terminal. Show the letter if it's in the set otherwise show "-"
     return ' '.join(incomplete_word_list)
 
-# def ask_if_play_again():
-#   # Take input, check if yes.
-#   # If yes, then call start_game()
-
 def start_game():
     selected_word = random.choice(WORDS)
     set_of_letters = set(selected_word)  # set to store the letters from the random word
@@ -47,11 +43,20 @@ def start_game():
 
     if lives_left == 0:
         print('\n You were hanged. The word was', selected_word)
+        
+        ask_if_play_again()
     else:
         print('Your are amazing, it was:', selected_word, '!!')
 
-# ask_if_play_again()
-
+def ask_if_play_again():
+    print('Do you want to play again? Y/N')
+    user_input = input()
+    if user_input == "Y":
+        start_game()
+    elif user_input == "N":
+        print("To bad, hang you some other time")
+    else:
+        print("Bye Bye!")
 
 def initialise_game():
   print("\n!!! Welcome to the Hangman Game !!!\n")
