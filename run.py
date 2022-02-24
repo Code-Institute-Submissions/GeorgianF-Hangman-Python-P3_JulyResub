@@ -49,7 +49,7 @@ def start_game():
         print('Your are amazing, it was:', selected_word, '!!')
 
 def ask_if_play_again():
-    print('Do you want to play again? Y/N')
+    print('\n Do you want to play again? Y/N')
     user_input = input().upper()
     if user_input == "Y":
         start_game()
