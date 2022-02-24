@@ -50,13 +50,13 @@ def start_game():
 
 def ask_if_play_again():
     print('Do you want to play again? Y/N')
-    user_input = input()
+    user_input = input().upper()
     if user_input == "Y":
         start_game()
     elif user_input == "N":
-        print("To bad, hang you some other time")
+        print("To bad, hang you some other time! Bye... \n")
     else:
-        print("Bye Bye!")
+        print("Bye Bye!\n")
 
 def initialise_game():
   print("\n!!! Welcome to the Hangman Game !!!\n")
