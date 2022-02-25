@@ -2,6 +2,7 @@ import random
 import string
 from constants import hangman_state_by_lives_left, WORDS, DRAWING
 
+
 def get_incomplete_word(used_letters, word):
     # Show the letter if it's in the set otherwise show "-"
     incomplete_word_list = [letter if letter in used_letters else '-' for letter in word]
@@ -20,7 +21,7 @@ def start_game():
     lives_left = len(hangman_state_by_lives_left)
 
     while len(set_of_letters) > 0 and lives_left > 0:
-        print('You have', lives_left, 'lives. Enter a letter to start the game\n')
+        print('You have', lives_left, 'lives.\n')
         # join the letters used into a set
         print('The letters used so far:', ' '.join(used_letters))
 
