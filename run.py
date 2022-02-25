@@ -33,7 +33,7 @@ def start_game():
         print(hangman_state_by_lives_left[lives_left])
         print('Current word:', incomplete_word)  # print the word
 
-        guess = input('Guess a letter: ').upper()
+        guess = input('Guess a letter: \n').upper()
         if guess in set_alphabet - used_letters:
             used_letters.add(guess)
             if guess in set_of_letters:
@@ -58,7 +58,7 @@ def start_game():
 
 
 def ask_if_play_again():
-    print('\n Do you want to play again? Y/N')
+    print('Do you want to play again? Y/N \n')
     user_input = input().upper()
     if user_input == "Y":
         start_game()
