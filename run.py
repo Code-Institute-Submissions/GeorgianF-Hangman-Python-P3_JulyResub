@@ -68,10 +68,10 @@ def ask_if_play_again():
 def initialise_game():
     print(DRAWING)
     print("\n!!! Welcome to the Hangman Game !!!\n")
-    print("Simple rules: Guess what the word, one letter at a time.\n")
-    print('Hangman Game is great\n')
-    print('It teaches us that by saying the wrong things\n')
-    print('You can end someones life\n')
+    print("Simple rules: Guess the word, one letter at a time.\n")
+    print('Hangman Game is great')
+    print('It teaches us that by saying the wrong things')
+    print('You can end someones life...')
     start_game()
 
 
