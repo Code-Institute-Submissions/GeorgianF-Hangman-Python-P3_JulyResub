@@ -20,7 +20,7 @@ def start_game():
     lives_left = len(hangman_state_by_lives_left)
 
     while len(set_of_letters) > 0 and lives_left > 0:
-        print('You have', lives_left, 'lives. Enter a letter:\n')
+        print('You have', lives_left, 'lives. Enter a letter to start the game\n')
         # join the letters used into a set
         print('The letters used so far:', ' '.join(used_letters))
 
@@ -69,9 +69,9 @@ def initialise_game():
     print(DRAWING)
     print("\n!!! Welcome to the Hangman Game !!!\n")
     print("Simple rules: Guess the word, one letter at a time.\n")
-    print('Hangman Game is great')
+    print('Hangman Game is great!')
     print('It teaches us that by saying the wrong things')
-    print('You can end someones life...')
+    print('You can end someones life...\n')
     start_game()
 
 
