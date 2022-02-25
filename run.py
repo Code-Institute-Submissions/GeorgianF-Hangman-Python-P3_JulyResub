@@ -2,9 +2,6 @@ import random
 import string
 from constants import hangman_state_by_lives_left, WORDS, DRAWING
 
-print(DRAWING)
-
-
 def get_incomplete_word(used_letters, word):
     # Show the letter if it's in the set otherwise show "-"
     incomplete_word_list = [letter if letter in used_letters else '-' for letter in word]
@@ -69,11 +66,12 @@ def ask_if_play_again():
 
 
 def initialise_game():
+    print(DRAWING)
     print("\n!!! Welcome to the Hangman Game !!!\n")
     print("Simple rules: Guess what the word, one letter at a time.\n")
-    print('"Hangman Game is great\n')
-    print('"It teaches us that by saying wrong things\n')
-    print('"You can end someones life\n')
+    print('Hangman Game is great\n')
+    print('It teaches us that by saying the wrong things\n')
+    print('You can end someones life\n')
     start_game()
 
 
