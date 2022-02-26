@@ -24,8 +24,7 @@
 At the end, the user it's asked if he wants to play again. He must enter _Y_ or _N_.
 If he enters anything else that the two letters, the game will stop with the message "Bye Bye!!"
 
-<img width="561" alt="Screenshot 2022-02-13 at 16 57 17" src="https://user-images.githubusercontent.com/91877102/155855787-991e2315-d59a-4ac6-b894-695bffc8cd44.png">
-
+<img width="418" alt="Screenshot 2022-02-26 at 20 16 48" src="https://user-images.githubusercontent.com/91877102/155856243-654bf0be-97b0-41a6-a5e7-35e79cbec413.png">
 
 ## Restriction
 The user can't enter numbers or more than one letter at the time, it will throw a error message _"Do you know what a letter is, right?"_
@@ -41,6 +40,7 @@ When first deploying the game, it gave an error due to the fact that I forgot to
 
 ## Validator Testing 
 Tested the code on http://pep8online.com/ with no errors
+
 <img width="430" alt="Screenshot 2022-02-26 at 18 20 37" src="https://user-images.githubusercontent.com/91877102/155856061-3fa50d04-e31f-477a-847e-a8f8fc297bb2.png">
 
 ### Unfixed Bugs
