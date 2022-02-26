@@ -5,7 +5,9 @@ from constants import hangman_state_by_lives_left, WORDS, DRAWING
 
 def get_incomplete_word(used_letters, word):
     # Show the letter if it's in the set otherwise show "-"
-    incomplete_word_list = [letter if letter in used_letters else '-' for letter in word]
+    incomplete_word_list = [
+        letter if letter in used_letters else '-' for letter in word
+        ]
     return ' '.join(incomplete_word_list)
 
 
