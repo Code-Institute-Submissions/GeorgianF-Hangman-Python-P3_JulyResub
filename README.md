@@ -30,12 +30,13 @@ If he enters anything else that the two letters, the game will stop with the mes
 The user can't enter numbers or more than one letter at the time, it will throw a error message _"Do you know what a letter is, right?"_
 
 ## Deployment
-The apps is deployed with Heroku and the link is found here: https://hangman-game-ci-p3.herokuapp.com/
-The Github Link: https://github.com/GeorgianF/Hangman-Python-P3
+- The apps is deployed with Heroku and the link is found here: https://hangman-game-ci-p3.herokuapp.com/
+- The Github Link: https://github.com/GeorgianF/Hangman-Python-P3
 
 ## Testing
-I've tested the game and verified all the functions.
-Tested the deployed game in the browsers: Safari, Chrome, Edge
+- I've tested the game and verified all the functions.
+- Tested the deployed game in the browsers: Safari, Chrome, Edge
+
 When first deploying the game, it gave an error due to the fact that I forgot to add the config var PORT 8000. I had to delete the the app and redeploy.
 
 ## Validator Testing 
