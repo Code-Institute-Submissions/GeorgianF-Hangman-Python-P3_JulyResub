@@ -44,8 +44,19 @@ Tested the code on http://pep8online.com/ with no errors
 
 <img width="430" alt="Screenshot 2022-02-26 at 18 20 37" src="https://user-images.githubusercontent.com/91877102/155856061-3fa50d04-e31f-477a-847e-a8f8fc297bb2.png">
 
-### Unfixed Bugs
+## Unfixed Bugs
 No unfixed bugs
+
+## Credits
+
+- Kylie Ying: https://github.com/kying18/hangman
+- Kylie Ying: https://www.youtube.com/watch?v=8ext9G7xspg&t=1572s
+- https://docs.python.org/3/library/random.html
+- https://docs.python.org/3/library/string.html
+- Book: Python Programming Third Edition. Author: Michael Dawson
+- I've used the online random word generator: https://randomwordgenerator.com/
+- ASCII image generator https://fsymbols.com/generators/carty/
+
 
 
 
