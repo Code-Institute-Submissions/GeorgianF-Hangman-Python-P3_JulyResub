@@ -44,10 +44,10 @@ def start_game():
                 print('\n Wrong!', guess, 'is not in the word.')
 
         elif guess in used_letters:
-            print('\n Pay attention, you already gave that letter')
+            print('\n Pay attention, you already gave that letter \n')
 
         else:
-            print('\nDo you know what a letter is, right?')
+            print('\n Do you know what a letter is, right? \n')
 
     if lives_left == 0:
         print('\n You were hanged. The word was', selected_word)
@@ -81,6 +81,7 @@ def initialise_game():
 
 def main():
     initialise_game()
+
 
 if __name__ == "__main__":
     main()
