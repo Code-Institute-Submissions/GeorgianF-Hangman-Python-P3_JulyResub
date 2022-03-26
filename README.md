@@ -20,6 +20,10 @@
 - The Github Link: https://github.com/GeorgianF/Hangman-Python-P3
 
 ### Functionality
+- For the logic of the the game I have redacted the following flow chart:
+
+<img width="633" alt="Screenshot 2022-03-26 at 20 30 49" src="https://user-images.githubusercontent.com/91877102/160254483-359ffcb3-2300-4ed2-b165-693c18dbf721.png">
+
 - The user enters one letter each time and checks if the input is found in the random generated word
 - If it's found, it will populate the word 
 
