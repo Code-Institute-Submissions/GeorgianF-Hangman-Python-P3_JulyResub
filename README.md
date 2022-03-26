@@ -83,12 +83,14 @@ To help me understand the game logic, I have watched the YouTube video from belo
 
 To generate the random word I have used the random library:
 - https://docs.python.org/3/library/random.html
+
 I have used the string library for string.ascii_uppercase:
 - https://docs.python.org/3/library/string.html
 
 In the Book Python Programming Third Edition, year 2010. Author: Michael Dawson I took the idea of using the hangman constants to make the drawings (page 149, chapter 5: List and Dictionaries).
 
 Random word generator that I afterwards stored in the constant WORDS, can be found here: https://randomwordgenerator.com/
+
 ASCII image generator for the HANGMAN word can be found here: https://fsymbols.com/generators/carty/
 
 
