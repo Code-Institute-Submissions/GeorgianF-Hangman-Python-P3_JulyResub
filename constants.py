@@ -1,4 +1,10 @@
-WORDS = ('OVERUSED', 'EXPRESS', 'PLEASANT', 'SWALLOW', 'PROPERTY', 'ACQUITANCE','GRADUAL', 'CAPITAL', 'DETECTIVE', 'MEASURE', 'DISGRACE', 'CIGARETTE', 'CROSSING','MULTIMEDIA', 'VOLUNTEER', 'TRANSFORM')
+WORDS = (
+    'OVERUSED', 'EXPRESS', 'PLEASANT',
+    'SWALLOW', 'PROPERTY', 'ACQUITANCE',
+    'GRADUAL', 'CAPITAL', 'DETECTIVE', 'MEASURE',
+    'DISGRACE', 'CIGARETTE', 'CROSSING',
+    'MULTIMEDIA', 'VOLUNTEER', 'TRANSFORM'
+    )
 
 DRAWING = """
 ██╗░░██╗░█████╗░███╗░░██╗░██████╗░███╗░░░███╗░█████╗░███╗░░██╗
@@ -28,7 +34,7 @@ hangman_state_by_lives_left = {
     |   /-+-/
     |     |
     |    -+-
-    |   
+    |
     |
     |
     -------------
@@ -39,8 +45,8 @@ hangman_state_by_lives_left = {
     |     O
     |   /-+-/
     |     |
-    |   
-    |   
+    |
+    |
     |
     |
     -------------
@@ -51,8 +57,8 @@ hangman_state_by_lives_left = {
     |     O
     |    -+-
     |     |
-    |   
-    |   
+    |
+    |
     |
     |
     -------------
@@ -61,10 +67,10 @@ hangman_state_by_lives_left = {
     ----------
     |     |
     |     O
-    |    
-    |     
-    |   
-    |   
+    |
+    |
+    |
+    |
     |
     |
     -------------
@@ -72,23 +78,23 @@ hangman_state_by_lives_left = {
     6: """
     ----------
     |     |
-    |     
-    |    
-    |     
-    |   
-    |   
+    |
+    |
+    |
+    |
+    |
     |
     |
     -------------
     """,
     7: """
     ----------
-    |     
-    |     
-    |    
-    |     
-    |   
-    |   
+    |
+    |
+    |
+    |
+    |
+    |
     |
     |
     -------------
