@@ -44,12 +44,13 @@ At the end, the user it's asked if he wants to play again. He must enter _Y_ or 
 <img width="307" alt="end game" src="https://user-images.githubusercontent.com/91877102/160243999-97dfab2b-0b6d-4566-9f97-933c764c252a.png">
 
 - If the user chooses _Y_ the game will restart with another random word
-- If the user chooses empty or invalid data, the question to play again will repeat
+- If the user chooses empty or invalid data, the question to play again will repeat - it will accept only Y or N
 
 <img width="225" alt="wrong input end game" src="https://user-images.githubusercontent.com/91877102/160244128-dca65423-629d-4948-b84e-524ef2acd68c.png">
 
 ### Restriction
 The user can't enter numbers or more than one letter at the time, it will print the message _"Do you know what a letter is, right?"_
+It won't take a _"live"_ if the input is wrong
 
 <img width="276" alt="wrong input" src="https://user-images.githubusercontent.com/91877102/160244154-c07086b7-18b5-4675-a78a-aaa353959398.png">
 
