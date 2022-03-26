@@ -78,13 +78,19 @@ No unfixed bugs
 
 ## Credits
 
+To help me understand the game logic, I have watched the YouTube video from below, also to understand the structure of the code based on the logic mentioned I have visited the GitHub Repo:
 - Kylie Ying: https://github.com/kying18/hangman
 - Kylie Ying: https://www.youtube.com/watch?v=8ext9G7xspg&t=1572s
+
+To generate the random word I have used the random library:
 - https://docs.python.org/3/library/random.html
+I have used the string library for string.ascii_uppercase:
 - https://docs.python.org/3/library/string.html
-- Book: Python Programming Third Edition. Author: Michael Dawson
-- I've used the online random word generator: https://randomwordgenerator.com/
-- ASCII image generator https://fsymbols.com/generators/carty/
+
+In the Book Python Programming Third Edition, year 2010. Author: Michael Dawson I took the idea of using the hangman constants to make the drawings (page 149, chapter 5: List and Dictionaries).
+
+Random word generator that I afterwards stored in the constant WORDS, can be found here: https://randomwordgenerator.com/
+ASCII image generator for the HANGMAN word can be found here: https://fsymbols.com/generators/carty/
 
 
 
