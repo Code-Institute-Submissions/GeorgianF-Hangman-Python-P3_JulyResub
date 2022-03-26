@@ -41,7 +41,7 @@ def start_game():
                 print('')
             else:
                 lives_left = lives_left - 1
-                print('\n Wrong!', guess, 'is not in the word.')
+                print('\n Wrong!', guess, 'is not in the word. \n')
 
         elif guess in used_letters:
             print('\n Pay attention, you already gave that letter \n')
