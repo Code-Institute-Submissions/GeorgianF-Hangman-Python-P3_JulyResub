@@ -4,8 +4,7 @@
 ## Main introduction into the game
 
 * This is a word guessing game, where the user enters one letter each time until the word is complete.
-* When the game is run the user will be greated with an ASCII image (* *to give a retro 90' look* * ) and a message
-  **
+* When the game is run the user will be greated with an ASCII image (_to give a retro 90' look_)
 * The user is explained the rules of the game
 * The user has 7 lives to start with ( * ***as in lucky no. 7*** * ), each fault decreases the lives number and until the user is "hanged"
 * The word is randomly chosen from a predefined list, that can be found on the constants.py document
