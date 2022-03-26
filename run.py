@@ -68,7 +68,7 @@ def ask_if_play_again():
     elif user_input == "N":
         print("To bad, hang you some other time! Bye... \n")
     else:
-        print(INPUT_ERROR, "You should enter Y or N")
+        print(INPUT_ERROR)
         raise TypeError("The game has stopped...")
 
 
