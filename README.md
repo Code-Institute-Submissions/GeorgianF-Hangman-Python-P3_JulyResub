@@ -49,7 +49,7 @@ At the end, the user it's asked if he wants to play again. He must enter _Y_ or 
 - If the user chooses _Y_ the game will restart with another random word
 - If the user chooses empty or invalid data, the game will stop. The raise keyword is used to raise an exception and the user is informed about via an ASCII ART + message "TypeError: The game has stopped..."
 
-<img width="225" alt="wrong input end game" src="https://user-images.githubusercontent.com/91877102/160244128-dca65423-629d-4948-b84e-524ef2acd68c.png">
+
 
 ### Restriction
 The user can't enter numbers or more than one letter at the time, it will print the message _"Do you know what a letter is, right?"_
