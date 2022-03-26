@@ -1,16 +1,17 @@
 # The Hangman Game
-
-<img width="575" alt="Screenshot 2022-02-26 at 18 17 15" src="https://user-images.githubusercontent.com/91877102/155855132-547b7ed9-db12-4305-a41c-fd2c5aef57c3.png">
-
-* This is a word guessing game, where the user enters one letter each time until the word is complete.
-* The user has 7 lives to start with, each fault decreases the lives number and until the user is "hanged"
-* The word is randomly chosen from a predefined list.
+* History: Though the origins of the game are unknown, a variant is mentioned in a book of children's games assembled by * *Alice Gomme* * in * *1894* * called * *Birds, Beasts, and Fishes* * . This version lacks the image of a hanged man, instead relying on keeping score as to the number of attempts it took each player to fill in the blanks.
 
 ## Main introduction into the game
 
-- When the game is run the user will be greated with an ASCII image (to give a retro look) and a message
-- The user is explained the rules of the game
-- The starting counter of the available lives is displayed (7 lives)
+* This is a word guessing game, where the user enters one letter each time until the word is complete.
+* When the game is run the user will be greated with an ASCII image (* *to give a retro 90' look* * ) and a message
+  **
+* The user is explained the rules of the game
+* The user has 7 lives to start with ( * ***as in lucky no. 7*** * ), each fault decreases the lives number and until the user is "hanged"
+* The word is randomly chosen from a predefined list, that can be found on the constants.py document
+* 
+<img width="446" alt="intro" src="https://user-images.githubusercontent.com/91877102/160243273-d2193db9-bdb5-4df5-bc83-04f00fe64ced.png">
+
 
 ## Functionality of the game
 
