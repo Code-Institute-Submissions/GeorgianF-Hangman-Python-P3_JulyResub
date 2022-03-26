@@ -1,6 +1,7 @@
 import random
 import string
 from constants import hangman_state_by_lives_left, WORDS, DRAWING
+from constants import GOOD_JOB, WRONG, INPUT_ERROR, GAME_OVER, WINNER
 
 
 def get_incomplete_word(used_letters, word):
@@ -35,24 +36,26 @@ def start_game():
 
         guess = input('Guess a letter: \n').upper()
         if guess in set_alphabet - used_letters:
+            print(GOOD_JOB, "\n", '"', guess, '"', "is in the word")
             used_letters.add(guess)
             if guess in set_of_letters:
                 set_of_letters.remove(guess)
                 print('')
             else:
                 lives_left = lives_left - 1
-                print('\n Wrong!', guess, 'is not in the word. \n')
+                print('\n', WRONG, "\n", '"', guess, '"', 'is not good\n')
 
         elif guess in used_letters:
             print('\n Pay attention, you already gave that letter \n')
 
         else:
-            print('\n Do you know what a letter is, right? \n')
+            print('\n', INPUT_ERROR, 'Do you know what a letter is, right? \n')
 
     if lives_left == 0:
-        print('\n You were hanged. The word was', selected_word)
+        print('\n', GAME_OVER, 'You were hanged. The word was', selected_word)
         ask_if_play_again()
     else:
+        print(WINNER)
         print('Your are amazing, it was:', selected_word, '!!')
         ask_if_play_again()
 
@@ -65,7 +68,7 @@ def ask_if_play_again():
     elif user_input == "N":
         print("To bad, hang you some other time! Bye... \n")
     else:
-        print("You should enter Y or N")
+        print(INPUT_ERROR, "You should enter Y or N")
         ask_if_play_again()
 
 
