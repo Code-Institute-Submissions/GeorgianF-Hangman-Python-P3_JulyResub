@@ -15,7 +15,22 @@
 ## How to use it?
 
 ### Deployment
+#### Heroku
 - The app is deployed with Heroku and the link is found here: https://hangman-game-ci-p3.herokuapp.com/ -> Click the _Run_ button
+##### Steps for deployment
+- Log into Heroku via the link: https://id.heroku.com/login
+- Click on the New and Create New App
+- Choose an App Name
+- Select the region: Europe (in my case)
+- Select the GitHub image in the _Deployment method_ section
+- Add and search the name of the GitHub Repository that you will want to deploy : Hangman-Python-P3
+- Connect to the Repository
+- In the Settings section add the Config Vars PORT 8000
+- In the Settings section add Buildpacks: Python and Node.JS
+- Go back to the Deploy Section and click onto Enable Automatic Deploys
+- Click the Deploy Branch button
+
+#### GitHub
 - The Github Link: https://github.com/GeorgianF/Hangman-Python-P3
 
 ### Functionality
