@@ -62,14 +62,17 @@ def start_game():
 
 def ask_if_play_again():
     print('Do you want to play again? Y/N \n')
-    user_input = input().upper()
-    if user_input == "Y":
-        start_game()
-    elif user_input == "N":
-        print("To bad, hang you some other time! Bye... \n")
-    else:
-        print(INPUT_ERROR)
-        raise TypeError("The game has stopped...")
+    try:
+        user_input = input().upper()
+        if user_input == "Y":
+            print('Game starting')
+        elif user_input == "N":
+            print("To bad, hang you some other time! Bye... \n")
+        else:
+            raise TypeError('Invalid input')
+    except TypeError as e:
+        print(INPUT_ERROR, e)
+        ask_if_play_again()
 
 
 def initialise_game():
