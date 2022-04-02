@@ -73,8 +73,9 @@ It won't take a _"live"_ if the input is wrong
 <img width="276" alt="wrong input" src="https://user-images.githubusercontent.com/91877102/160244154-c07086b7-18b5-4675-a78a-aaa353959398.png">
 
 ## Testing
-- I've tested the game for functionality in all the stages mentioned above and verified all the functions.
+- I have used a Behavior Driven Development (BDD) aproach where I've tested the game for functionality in all the stages mentioned above and verified all the functions. No software testing tools where used.
 - Tested the deployed game in the browsers: Safari, Chrome, Edge
+
 
 ## Validator Testing 
 Tested the code on http://pep8online.com/ with no errors
