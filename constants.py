@@ -150,3 +150,4 @@ hangman_state_by_lives_left = {
     -------------
     """,
 }
+
