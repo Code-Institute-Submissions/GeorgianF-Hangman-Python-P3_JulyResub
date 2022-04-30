@@ -82,7 +82,7 @@ Tested the code on http://pep8online.com/ with no errors
 
 ### Document run.py:
 
-<img width="966" alt="run" src="https://user-images.githubusercontent.com/91877102/160244308-28513e06-ac11-4d76-a65c-6bef0b040684.png">
+<img width="929" alt="Screenshot 2022-04-30 at 12 23 16" src="https://user-images.githubusercontent.com/91877102/166102120-5d3892b3-2bb6-4239-b575-03a0cf1ba781.png">
 
 ### Document constants.py:
 
