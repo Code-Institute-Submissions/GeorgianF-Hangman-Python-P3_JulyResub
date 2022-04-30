@@ -1,7 +1,6 @@
 import random
 import string
-from constants import hangman_state_by_lives_left, WORDS, DRAWING
-from constants import GOOD_JOB, WRONG, INPUT_ERROR, GAME_OVER, WINNER
+import constants
 
 
 def get_incomplete_word(used_letters, word):
@@ -13,7 +12,7 @@ def get_incomplete_word(used_letters, word):
 
 
 def start_game():
-    selected_word = random.choice(WORDS)
+    selected_word = random.choice(constants.WORDS)
     # set to store the letters from the random word
     set_of_letters = set(selected_word)
     # The uppercase letters 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
@@ -21,7 +20,7 @@ def start_game():
     # store the guessed letters and don't allow to reenter
     used_letters = set()
     # The lives that the user will have
-    lives_left = len(hangman_state_by_lives_left)
+    lives_left = len(constants.hangman_state_by_lives_left)
 
     while len(set_of_letters) > 0 and lives_left > 0:
         print('You have', lives_left, 'lives.\n')
@@ -31,31 +30,47 @@ def start_game():
         incomplete_word = get_incomplete_word(used_letters, selected_word)
 
         # import the hangman drawing and print them to the console
-        print(hangman_state_by_lives_left[lives_left])
+        print(constants.hangman_state_by_lives_left[lives_left])
         print('Current word:', incomplete_word)  # print the word
 
         guess = input('Guess a letter: \n').upper()
         if guess in set_alphabet - used_letters:
-            print(GOOD_JOB, "\n", '"', guess, '"', "is in the word")
+            print(constants.GOOD_JOB, "\n", '"', guess, '"', "is in the word")
             used_letters.add(guess)
             if guess in set_of_letters:
                 set_of_letters.remove(guess)
                 print('')
             else:
                 lives_left = lives_left - 1
-                print('\n', WRONG, "\n", '"', guess, '"', 'is not good\n')
+                print(
+                    '\n',
+                    constants.WRONG,
+                    "\n",
+                    '"',
+                    guess,
+                    '"',
+                    'is not good, try again\n')
 
         elif guess in used_letters:
             print('\n Pay attention, you already gave that letter \n')
 
         else:
-            print('\n', INPUT_ERROR, 'Do you know what a letter is, right? \n')
+            print(
+                '\n',
+                constants.INPUT_ERROR,
+                'Do you know what a letter is, right? \n'
+                )
 
     if lives_left == 0:
-        print('\n', GAME_OVER, 'You were hanged. The word was', selected_word)
+        print(
+            '\n',
+            constants.GAME_OVER,
+            'You were hanged. The word was',
+            selected_word
+            )
         ask_if_play_again()
     else:
-        print(WINNER)
+        print(constants.WINNER)
         print('Your are amazing, it was:', selected_word, '!!')
         ask_if_play_again()
 
@@ -71,12 +86,12 @@ def ask_if_play_again():
         else:
             raise TypeError('Invalid input')
     except TypeError as e:
-        print(INPUT_ERROR, e)
+        print(constants.INPUT_ERROR, e)
         ask_if_play_again()
 
 
 def initialise_game():
-    print(DRAWING)
+    print(constants.DRAWING)
     print("\n!!! Welcome to the Hangman Game !!!\n")
     print("Simple rules: Guess the word, one letter at a time.\n")
     print('Hangman Game is great!')
