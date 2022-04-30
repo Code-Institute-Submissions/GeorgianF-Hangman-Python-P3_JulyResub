@@ -81,6 +81,7 @@ def ask_if_play_again():
         user_input = input().upper()
         if user_input == "Y":
             print('Game starting')
+            initialise_game()
         elif user_input == "N":
             print("To bad, hang you some other time! Bye... \n")
         else:
